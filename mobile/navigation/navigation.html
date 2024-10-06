@@ -1,7 +1,10 @@
 <div class="main-nav-container" ng-controller="NavigationController">
    <div class="navigation-container">
       <ul class="nav-list">
-         <li ng-repeat="page in pageRoutes" ng-click="setTab(page.url)" ng-class="{ 'active': activeTab === page.url }">{{page.name}}</li>
+         <li ng-repeat="page in pageRoutes" ng-click="setTab(page.url)" ng-class="{ 'active': activeTab === page.url }">
+            <span ng-hide="activeTab != page.url">► </span>{{page.name}}<span ng-hide="activeTab != page.url"> ◄</span>
+         </li>
+         
       </ul>
    </div>
    

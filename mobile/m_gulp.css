@@ -374,3 +374,7 @@ img, .container {
 .search-input[type="text"]:focus {
     outline: none;
   }
+
+.nav-list > li.active {
+    color: green;
+}
