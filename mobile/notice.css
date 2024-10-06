@@ -1,0 +1,28 @@
+.floating-notice {
+    position: fixed; /* Make it fixed positioned */
+    bottom: 20px; /* Position it at the bottom */
+    right: 20px; /* Position it on the right */
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+  
+  .floating-notice p {
+    margin: 0;
+  }
+  
+  .close-notice {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

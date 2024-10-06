@@ -1,0 +1,11 @@
+<div class="topNavigation" ng-controller="NavigationController">
+   <div class="top-navigation">
+      <div class="logo" ng-click="refreshPage()">
+         <img src="/assets/navigation_icon/Bamboo.svg" alt="">
+         <img src="/assets/navigation_icon/EM Furniture.svg" alt="" height="17px">
+      </div>
+      <div class="navigation-icons" ng-repeat="nav in navIcons">
+         <img src="/assets/navigation_icon/{{nav.img}}.svg" alt="">
+      </div>
+   </div>
+</div>

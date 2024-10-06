@@ -1,0 +1,13 @@
+<div class="container">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+    
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea><br><br>
+    
+        <input type="file" name="uploaded_file" id="uploaded_file"><br><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>

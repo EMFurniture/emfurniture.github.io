@@ -1,0 +1,91 @@
+.slider {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    overflow: hidden;
+    
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      transform: translateX(-200px);
+    }
+  }
+  
+  .item {
+    width: 200px;
+    height: 100px;
+    background-color: #065f46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 6px;
+    
+    position: absolute;
+    transform: translateX(calc(200px * 8));
+    animation: scrollLeft linear infinite 30s;
+  }
+  
+  @for $i from 1 through 8 {
+    .item#{$i} {
+      animation-delay: calc(30s / 8 * (8 - #{$i}) * -1);
+    }
+  }
+  
+  .item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  } 
+  
+  
+  
+  /* Global styling */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+  
+  .carousel-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Made by ZeroJS */

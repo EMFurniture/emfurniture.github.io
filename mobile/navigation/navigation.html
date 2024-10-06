@@ -1,0 +1,9 @@
+<div class="main-nav-container" ng-controller="NavigationController">
+   <div class="navigation-container">
+      <ul class="nav-list">
+         <li ng-repeat="page in pageRoutes" ng-click="setTab(page.url)" ng-class="{ 'active': activeTab === page.url }">{{page.name}}</li>
+      </ul>
+   </div>
+   
+   <div ng-include="activeTab ? currentPage.url : defaultPage" class="animate__animated animate__fadeIn" style="animation-duration: .5s;"></div>
+</div>
