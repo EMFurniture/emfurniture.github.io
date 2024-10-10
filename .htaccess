@@ -1,3 +1,9 @@
-   RewriteEngine On
-   RewriteCond %{HTTP_USER_AGENT} "android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos" [NC]
-   RewriteRule ^$ /mobile/ [L,R=301]
+RewriteEngine On
+
+# Redirect mobile devices (including tablets)
+RewriteCond %{HTTP_USER_AGENT} "android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos|iPhone|iPad|Windows Phone|Samsung|Mobile|Android" [NC]
+RewriteRule ^$ /mobile/ [L,R=301]
+
+# Redirect tablets to the desktop version (optional)
+RewriteCond %{HTTP_USER_AGENT} "iPad" [NC]
+RewriteRule ^$ / [L,R=301]
