@@ -1,0 +1,13 @@
+<div class="gallery-container" ng-controller="GalleryController">
+  <div class="gallery-banner-container">
+    <div class="gallery-banner">
+      <h1>Explore our beautiful bamboo creations!</h1>
+    </div>
+    </div>
+    <div class="gallery-span-full">
+    <span>Browse through our gallery to see selections of our expertly crafted bamboo furniture, custom projects, and customer photos. Get inspired and discover the perfect pieces for your home.</span>
+    </div>
+    <div class="image-lists">
+    <img ng-repeat="photos in galleryImages" src="/assets/{{ photos.img }}" alt="" ng-click="displayPopup()">
+    </div>
+</div>

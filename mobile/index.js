@@ -6,6 +6,13 @@ angular.module('myApp', [])
       controller: 'NavigationController'
     };
   })
+  .directive('galleryPage', function() {
+    return {
+      restrict: 'E', // 'E' for element
+      templateUrl: 'pages/gallery.html',
+      controller: 'GalleryController'
+    };
+  })
   .controller('MainController', function($scope, $sce) {
     $scope.content = ''; // Initial content
 

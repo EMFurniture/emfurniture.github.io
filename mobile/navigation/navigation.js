@@ -23,14 +23,11 @@ angular.module('myApp')
             $window.location.reload();
         };
 
-        console.log($scope.pageRoutes); // Add this line for debugging
-
         $scope.defaultPage = 'pages/main-content.html';
         $scope.activeTab = $scope.defaultPage;
         $scope.currentPage = {};
 
         $scope.setTab = function (url) {
-            console.log(url); // Add this line for debugging
             $location.path(url);
             $scope.activeTab = url;
             $scope.currentPage = $scope.pageRoutes.find(function(page) {
