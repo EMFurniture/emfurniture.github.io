@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required><br><br>
@@ -10,4 +10,12 @@
     
         <input type="submit" value="Submit">
     </form>
+</div> -->
+
+<!-- Uncomment above once using Web Hosting for further check -->
+
+<div class="navigation-container" ng-controller="NavigationController">
+    <div class="test-arrays-container" ng-repeat="array in testArray">
+        <span>{{ array.name }}</span>
+    </div>
 </div>
