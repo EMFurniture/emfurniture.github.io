@@ -479,6 +479,8 @@ img, .container {
     display: flex;
     flex-direction: column;
     background-color: #E1F4D5;
+    text-align: justify;
+    line-height: 20px;
 
 }
 .contact-us-container h2 {
@@ -486,4 +488,38 @@ img, .container {
     font-size: 20px;
     color: #072820;
     font-weight: 100
+}
+.p_conct {
+    background-color: #D4F5ED;
+    height: 200px;
+}
+.contact-us-container p {
+    font-family: Inria Sans;
+    font-size: 18px;
+    color: #072820;
+    font-weight: 500;
+    height: fit-content;
+    text-align: center;
+    margin: 20px;
+    margin-top: 50px;
+}
+.information {
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+.information img {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    flex-direction: column;
+
+}
+.information span {
+    flex-direction: column;
+    text-align: center;
+}
+.information img span {
+    flex-direction:row;
+    display: flex;
 }
