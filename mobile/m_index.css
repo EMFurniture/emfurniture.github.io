@@ -475,3 +475,15 @@ img, .container {
     max-width: 100%;
     height: auto;
 }
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E1F4D5;
+
+}
+.contact-us-container h2 {
+    font-family: josefin slab;
+    font-size: 20px;
+    color: #072820;
+    font-weight: 100
+}
