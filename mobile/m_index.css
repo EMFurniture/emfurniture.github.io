@@ -501,7 +501,6 @@ img, .container {
     height: fit-content;
     text-align: center;
     margin: 20px;
-    margin-top: 50px;
 }
 .information {
     flex-direction: column;
