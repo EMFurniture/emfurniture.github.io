@@ -480,14 +480,14 @@ img, .container {
     flex-direction: column;
     background-color: #E1F4D5;
     text-align: justify;
-    line-height: 20px;
 
 }
 .contact-us-container h2 {
     font-family: josefin slab;
-    font-size: 20px;
+    font-size: 22px;
     color: #072820;
-    font-weight: 100
+    font-weight: 100;
+    margin-left: 30px;
 }
 .p_conct {
     background-color: #D4F5ED;
@@ -506,7 +506,8 @@ img, .container {
 .information {
     flex-direction: column;
     display: flex;
-    gap: 5px;
+    gap: 15px;
+    margin: 20px;
 }
 .information img {
     width: 44px;
@@ -518,8 +519,46 @@ img, .container {
 .information span {
     flex-direction: column;
     text-align: center;
+    font-family: Josefin Slab;
+    font-weight: 200;
 }
-.information img span {
-    flex-direction:row;
+.email {
     display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+}
+.email span {
+    margin: 15px;
+    font-size: 20px;
+}
+.phone {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+}
+.phone span {
+    margin: 15px;
+    font-size: 20px;
+}
+.address {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+}
+.address span {
+    margin: 15px;
+    font-size: 20px;
+}
+.time {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+}
+.time span {
+    margin: 15px;
+    font-size: 16px;
 }
