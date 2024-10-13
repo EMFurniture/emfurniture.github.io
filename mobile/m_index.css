@@ -530,7 +530,7 @@ img, .container {
 }
 .email span {
     margin: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .phone {
     display: flex;
@@ -540,7 +540,7 @@ img, .container {
 }
 .phone span {
     margin: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .address {
     display: flex;
@@ -550,15 +550,16 @@ img, .container {
 }
 .address span {
     margin: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .time {
     display: flex;
     flex-direction: row;
     gap: 5px;
     text-align: center;
+    font
 }
 .time span {
     margin: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
