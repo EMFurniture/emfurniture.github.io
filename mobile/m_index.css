@@ -525,43 +525,18 @@ img, .container {
     font-family: Josefin Slab;
     font-weight: 200;
 }
-.email {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    text-align: center;
-}
-.email span {
-    margin: 15px;
-    font-size: 17px;
-}
-.phone {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    text-align: center;
-}
-.phone span {
-    margin: 15px;
-    font-size: 17px;
-}
-.address {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    text-align: center;
-}
-.address span {
-    margin: 15px;
-    font-size: 17px;
-}
+.email,
+.phone,
+.address,
 .time {
     display: flex;
     flex-direction: row;
     gap: 5px;
     text-align: center;
-    font
 }
+.email span,
+.phone span,
+.address span,
 .time span {
     margin: 15px;
     font-size: 17px;
