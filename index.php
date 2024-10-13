@@ -14,6 +14,7 @@
 </head>
 <body>
 <?php require_once 'functions.php'; ?>
+<h1>Test</h1>
   <div ng-controller="MainController">
     <div class="topNavigation" ng-include="'pages/topNavigation.html'"></div>
     <div class="navigation" ng-include="'pages/navigation.html'"></div>
