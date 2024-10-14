@@ -47,4 +47,26 @@ angular.module('myApp', [])
         });
       }
     };
+  })
+  .controller('LoginController', function($scope) {
+    $scope.isLoggedIn = false;
+    $scope.username = '';
+
+    $scope.login = function() {
+      // Replace this with your actual login logic.
+      // You'll need to send a request to your server to verify the credentials.
+      if ($scope.username === 'your_username' && $scope.password === 'your_password') {
+        $scope.isLoggedIn = true;
+      } else {
+        // Handle incorrect credentials
+        alert('Invalid username or password');
+      }
+    };
+
+    $scope.logout = function() {
+      // Replace this with your actual logout logic.
+      // You'll need to send a request to your server to log the user out.
+      $scope.isLoggedIn = false;
+      $scope.username = '';
+    };
   });

@@ -15,9 +15,9 @@
 <body>
 <?php require_once 'functions.php'; ?>
   <div ng-controller="MainController">
-    <div class="topNavigation" ng-include="'pages/topNavigation.html'"></div>
-    <div class="navigation" ng-include="'pages/navigation.html'"></div>
-    <div class="footer" ng-include="'pages/footer.html'"></div> 
+    <?php include 'pages/topNavigation.php'; ?>
+    <!-- <div class="navigation" ng-include="'pages/navigation.html'"></div>
+    <div class="footer" ng-include="'pages/footer.html'"></div>  -->
   </div>
 
   <script src="/node_modules/ng-dialog/js/ngDialog.min.js"></script> 

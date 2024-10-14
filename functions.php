@@ -9,13 +9,6 @@ if (isMobile()) {
     exit;
 }
 
-if (isset($_SESSION['username'])) {
-    echo "<p>Welcome, " . $_SESSION['username'] . "!</p>";
-    echo "<a href='logout.php'>Logout</a>";
-} else {
-    echo "<a href='login.php'>Login</a>";
-}
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!isset($_SESSION['username'])) {
         echo "<p>Please log in to submit the form.</p>";
